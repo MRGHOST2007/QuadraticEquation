@@ -7,6 +7,23 @@
     android:background="@color/black"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/contactbtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/chat_icon"
+        app:layout_constraintBottom_toBottomOf="@+id/ratebtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ratebtn"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/rate_star"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/delta"
         android:layout_width="wrap_content"
@@ -45,6 +62,9 @@
         android:textColor="@color/white"
         android:textColorHint="@color/grey"
         android:textSize="28sp"
+        android:background="@drawable/rectangle1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/editTextB"
         app:layout_constraintHorizontal_bias="0.5"
@@ -59,6 +79,9 @@
         android:textColor="@color/white"
         android:textColorHint="@color/grey"
         android:textSize="28sp"
+        android:background="@drawable/rectangle1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toStartOf="@+id/editTextC"
         app:layout_constraintHorizontal_bias="0.5"
@@ -74,6 +97,9 @@
         android:textColor="@color/white"
         android:textColorHint="@color/grey"
         android:textSize="28sp"
+        android:background="@drawable/rectangle1"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -88,7 +114,7 @@
         android:layout_height="wrap_content"
         android:background="@null"
         android:text="Calculate"
-        android:onClick="calculate"
+        android:onClick="initUI"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:textSize="24sp"
@@ -96,7 +122,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline3"
-        tools:ignore="UsingOnClickInXml" />
+        tools:ignore="UsingOnClickInXml"
+        android:clickable="true"
+        android:focusable="true"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"
