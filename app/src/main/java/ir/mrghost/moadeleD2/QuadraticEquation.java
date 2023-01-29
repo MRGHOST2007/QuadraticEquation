@@ -1,6 +1,6 @@
 package ir.mrghost.moadeleD2;
 
-public class Calculate {
+public class QuadraticEquation {
 
     public float calculateDelta(float a, float b, float c) { return (b * b) - (4 * a * c); }
 
